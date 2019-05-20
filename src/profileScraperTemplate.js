@@ -7,7 +7,7 @@ module.exports = {
       name: `${profileSelector} div:nth-child(3) > div:first-child > div:first-child h1`,
       headline: `${profileSelector} div:nth-child(3) > div:first-child > h2`,
       location: `${profileSelector} div:nth-child(3) > div:first-child > h3`,
-      connections: `${profileSelector} div:last-child > div:last-child > div:first-child ul:last-child > li:nth-child(2)`
+      connections: `${profileSelector} div:nth-child(3) > div:last-child > a:last-child > span:last-child`
     }
   },
   about: {
