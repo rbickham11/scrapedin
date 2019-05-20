@@ -4,16 +4,16 @@ module.exports = {
   profile: {
     selector: '.pv-content',
     fields: {
-      name: `${profileSelector} div:last-child > div:last-child > div:first-child ul:first-child > li:first-child`,
-      headline: `${profileSelector} div:last-child h2`,
-      location: `${profileSelector} div:last-child > div:last-child > div:first-child ul:last-child > li:first-child`,
+      name: `${profileSelector} div:nth-child(3) > div:first-child > div:first-child h1`,
+      headline: `${profileSelector} div:nth-child(3) > div:first-child > h2`,
+      location: `${profileSelector} div:nth-child(3) > div:first-child > h3`,
       connections: `${profileSelector} div:last-child > div:last-child > div:first-child ul:last-child > li:nth-child(2)`
     }
   },
   about: {
-    selector: '.pv-about-section',
+    selector: '.pv-top-card-section__summary',
     fields: {
-      text: '.pv-about__summary-text'
+      text: '.pv-top-card-section__summary-text > span:first-child'
     }
   },
   positions: {
