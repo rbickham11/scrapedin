@@ -8,7 +8,7 @@ module.exports = (profile) => {
   }
 
   if(profile.profile.connections) {
-    profile.profile.connections = profile.profile.connections.replace(' connections', '')
+    profile.profile.connections = profile.profile.connections.replace(/[^\d]/g, '')
 
     if(profile.profile.connections.indexOf('followers') > -1){
       profile.profile.followers = profile.profile.connections
